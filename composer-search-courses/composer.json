@@ -1,0 +1,24 @@
+{
+    "name": "josemurilloc/composer-search-courses",
+    "description": "Search all courses at plataform of alura education",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jose Murillo",
+            "email": "jooseemurillo@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.3",
+        "symfony/dom-crawler": "^5.3",
+        "symfony/css-selector": "^5.3"
+    },
+    "autoload": {
+        "files": [],
+        "classmap": [],
+        "psr-4": {
+            "ComposerSearchCourses\\SearchOfCourses\\": "src/"
+        }
+    }
+}
