@@ -12,7 +12,11 @@ class UserController extends Controller
 
     public function index(Request $request)
     {
-        return User::find(1);
+        $user = User::find(1);
+        return response()->json([
+            'name' => $user->name,
+            'email' => $user->email
+        ]);
     }
 
     public function store(Request $request)
