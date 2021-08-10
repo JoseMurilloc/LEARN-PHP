@@ -6,6 +6,7 @@ use App\Http\Requests\UserRequest;
 use App\Models\User;
 use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -31,7 +32,7 @@ class UserController extends Controller
             User::create([
                 'name' => $user['name'],
                 'email'  => $user['email'],
-                'password' => $user['password']
+                'password' => Hash::make($user['password'])
             ]);
 
             return response()->json(['data' => $user]);

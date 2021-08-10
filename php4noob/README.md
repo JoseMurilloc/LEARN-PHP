@@ -3,9 +3,8 @@
 ## 📑 Students layer project of Laravel
 - [x] Routes
 - [x] Controllers
-- [ ] Validation data request
-- [ ] Middleware (access restrict)
-- [ ] Migrations 
-- [ ] ORM of Laravel
-- [ ] Layer repositories
-- [ ] 
+- [x] Validation data request
+- [x] Middleware (access restrict)
+- [x] Migrations 
+- [o/x] ORM of Laravel
+- [o/x] Layer repositories
